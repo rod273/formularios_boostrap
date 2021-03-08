@@ -92,23 +92,29 @@
 
     <!--
         Validação formulario
-        classes: is-valid, is-invalid, invalid-feedback
+        classes: is-valid, is-invalid, invalid-feedback, valid-feedback
     -->
 
     <form >
-        <div>
+        <div class="form-group">
             <label for="email-usuario">email</label>
-            <input type="text" id="email-usuario" placeholder="Digite o seu email">
+            <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite o seu email">
+
+            <div class="valid-feedback">
+                Email válido
+            </div>
+
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="senha-usuario">Senha</label>
-            <input type="email" id="senha-usuario" placeholder="digite a sua senha">
+            <input class="form-control is-invalid" type="email" id="senha-usuario" placeholder="digite a sua senha">
 
-        <div>
-            Senha iválida
+        <div class="invalid-feedback">
+            Senha inválida
         </div>
      </div>
+     <input class="btn btn-danger" type="submit" Value="logar">
     </form>
 
 
