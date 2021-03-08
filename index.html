@@ -44,31 +44,48 @@
 
             <!--textarea-->
 
-            <div>
+            <div class="form-group">
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" rows="3"></textarea>
+                <textarea class="form-control"id="mensagem" rows="3"></textarea>
             </div>
             
             <!--file input-->
 
-            <div>
+            <div class="form-group">
                 <label for="arquivo">Arquivo</label>
-                <input type="text" id="arquivo">
-                <label> Selecione Arquivo </label>
+                <input class="form-control-file"type="text" id="arquivo">
+            </div>
+
+            <!-- custom file input-->
+
+            <div class="custom-file">
+               
+                <label class="custom-file-label" for="">Selecione Arquivo</label>
+                <input class="custom-file-input" type="file" id="arquivo">
             </div>
             <br><br>
 
             <!--range-->
-            <div>
+            <div class="form-group">
                 <label id="range">Satisfação</label>
-                <input type="range"  id="range" min="1" max="5">
+                <input class="custom-range" type="range"  id="range" min="1" max="5">
             </div>
 
 
              <!--button-->
-             <input type="submit" Value="Salvar">
+             <input class="btn btn-primary" type="submit" Value="Salvar">
 
        </form>
+
+       <br><br>
+
+       <!--formulario inline-->
+
+       <form class="form-inline">
+           <input class="form-control" type="text" placeholder="Digite o seu usuário"></input>
+           <input class="form-control" type="password" placeholder="Digite o sua senha"></input>
+           <input class="form-control" type="submit" Value="logar"></input>
+       </form> 
 
        <br><br>
 
